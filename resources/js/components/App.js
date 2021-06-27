@@ -24,6 +24,10 @@ class App extends Component{
 
                             <Switch>
 
+                                <Route path={`${this.state.PUBLIC_URL}register`}>
+                                    <Register />
+                                </Route>
+
                                 <Route path={`${this.state.PUBLIC_URL}login`}>
                                     <Login />
                                 </Route>

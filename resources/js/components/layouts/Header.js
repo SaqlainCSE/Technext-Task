@@ -15,6 +15,10 @@ const [publicURL, setPublicURL] = useState("/task");
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
+
+                    <Link to={`${publicURL}/register`}>
+                        <Nav.Item className="text-white mr-2" href={`${publicURL}`}>Register</Nav.Item>
+                    </Link>
                     
                     <Link to={`${publicURL}/login`}>
                         <Nav.Item className="text-white mr-2" href={`${publicURL}`}>Login</Nav.Item>
